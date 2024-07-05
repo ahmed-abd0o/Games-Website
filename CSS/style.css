@@ -1,0 +1,111 @@
+/* Start General setting */
+:root {
+    --main-color: #09c;
+}
+body {
+    font-family: "Comfortaa", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Nerko One", cursive;
+}
+/* End General setting */
+
+/* Header  */
+
+header {
+    max-height: 30vh;
+}
+
+/* Header  */
+
+/* Start Navbar Edit  */
+nav {
+    background-color: #3a497b;
+    margin-top: -35px;
+}
+
+@media (min-width: 992px) {
+    nav {
+        min-width: 800px;
+    }
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--main-color);
+}
+
+.navbar {
+    --bs-navbar-color: white;
+    --bs-navbar-hover-color: var(--main-color);
+    --bs-navbar-brand-color: white;
+    --bs-navbar-brand-hover-color: white;
+}
+
+.navbar-brand img {
+    width: 40px;
+}
+/* End Navbar edit  */
+
+/* Start Card Styling */
+.card {
+    cursor: pointer;
+    --bs-card-border-color: rgba(255, 255, 255, 0.112);
+}
+
+.inner {
+    transform: scale(1);
+    transition: all 0.3s;
+    filter: grayscale(80%) blur(0.4px);
+}
+.inner:hover {
+    transform: scale(1.06);
+    filter: grayscale(00%) blur(0px);
+}
+
+.inner .card-body p,
+.my-card-footer,
+.inner .card-title {
+    transition: opacity 0.3s ease;
+}
+.inner .card-title h5,
+.my-card-footer span {
+    font-family: "Ubuntu", sans-serif;
+}
+.inner:hover .card-body p,
+.inner:hover .my-card-footer,
+.inner:hover .card-title {
+    opacity: 1 !important;
+}
+
+.my-card-footer::before {
+    content: "";
+    width: 65%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    top: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 25%;
+}
+
+/* Eng Card Styling */
+
+.badge-bgc {
+    background-color: var(--main-color);
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+
+.layer .row p:last-of-type {
+    font-size: 14px;
+}
+.layer i {
+    cursor: pointer;
+}
